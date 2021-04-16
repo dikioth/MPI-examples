@@ -1,0 +1,7 @@
+first_valc1=system("awk 'FNR == 1 {print $2}' ../test_data/speedup.txt")
+
+set terminal png size 800,600
+set output '../plots/speedup.png'
+set xlabel 'Num processes'
+set ylabel 'Speedup'
+plot '../test_data/speedup.txt' using 1:(first_valc1/$2) with linespoints title 'Real' lw 2, [0:3] x title 'Ideal' lw 2
