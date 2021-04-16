@@ -18,19 +18,19 @@ or tensors. It is computed using the current node and its neighbours
 (See Fig. below). The boundary is periodic, meaning that the
 stencil operation will be applied to it’s neighbours as a torus.
 
-![Stencil application on a vector, matrix and
-tensor.](figs/stencil_123D.png "fig:")
+<img src="figs/stencil_123D.png" alt="drawing" width="400"/>
+
 
 One application of the stencil operation is approximating derivatives of
 a function. The first derivative using five-points stencil is defined in
 Eq. below . Notice that the center point `f(x)` is not involved.
 
-![fprim.](figs/fprim.png)
+<img src="figs/fprim.png" alt="drawing" width="200"/>
 
 where `h` is the space between points in the grid. The stencil elements
 are
 
-![](figs/stencils.png)
+<img src="figs/stencils.png" alt="drawing" width="100"/>
 
 Method
 ======
@@ -43,9 +43,9 @@ all the processes (including itself). Each process applies the stencil
 operation on their local copy of the sub-arrays and the root process
 collects back the result of each process and saves it in an output file.
 
-![parallelization of stencil operation. $P$ is the number of processes
-and $S$ is the number of stencil
-applications.](figs/diagram_stencil.png ) 
+
+<img src="figs/diagram_stencil.png" alt="drawing" width="300"/>
+
 
 The five-points stencil operation needs two (2) elements from the left
 and right neighbours at the array edges. The method implemented is to
@@ -53,8 +53,8 @@ allocate memory for two extra elements at right and left edges. (See
 Fig. below). Then the edge elements are sent and received
 to and from its neighbours.
 
-![Send and received extension elements using MPI
-functions.](figs/rank_sendrecv.png )
+
+<img src="figs/rank_sendrecv.png" alt="drawing" width="300"/>
 
 The list of all important functions used in the project is shown in
 Table below
@@ -90,8 +90,8 @@ The results of running 1,000 stencil applications on a 4M input size
 array with different number of processes are shown in Fig.
 below. The strong and weak scalability tests are presented below
 
-![Speedup. 4M input size. 1,000 stencil
-applications.](figs/speedup.png "fig:") [fig:speedup]
+
+<img src="figs/speedup.png" alt="drawing" width="300"/>
 
 
 ### **Strong scale test**
