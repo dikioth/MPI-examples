@@ -15,7 +15,7 @@ The implementation of Matrix-Matrix multiplication can be found in [example 2](h
 ## **Example 3: The Parallel Quicksort algorithm**
 The implementation of Parallel quicksort can be found in [example 3](https://github.com/dikioth/MPI-examples/tree/main/example3_parallell_quicksort). 
 
-<img src="example3_parallell_quicksort/figs/example_quicksort.png" alt="drawing" width="400"/>
+<img src="example3_parallell_quicksort/figs/qsort_example.png" alt="drawing" width="300"/>
 
 ## **Example 4: Conjugate gradient method**
 To be finished.
