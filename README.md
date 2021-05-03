@@ -18,4 +18,6 @@ The implementation of Parallel quicksort can be found in [example 3](https://git
 <img src="example3_parallell_quicksort/figs/qsort_example.png" alt="drawing" width="300"/>
 
 ## **Example 4: Conjugate gradient method**
-To be finished.
+The conjugate gradient method was used to solve the 2D Poission equation. The implementation is shown in [example 4](https://github.com/MPI-examples/tree/main/example4_conjugate_gradient).
+
+<img src="example_4_conjugate_gradient/figs/ex_u.png" alt="drawing" width="300"/>
